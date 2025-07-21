@@ -38,13 +38,11 @@ export function FooterSection() {
         <div className="border-t border-primary/20 pt-8">
           <div className="text-center space-y-4">
             <p className="text-gray-text text-lg font-semibold">
-              © 2025 Todos os direitos reservados | Desenvolvido por{" "}
+              © 2025 Todos os direitos reservados | Desenvolvido por Tiago Devzapp{" "}
               <span className="text-primary"></span>
             </p>
             
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-text">
-              
-              <span>•</span>
               
             </div>
             
@@ -52,7 +50,6 @@ export function FooterSection() {
               <a href="#" className="hover:text-primary transition-colors">
                 📱 Política de Privacidade
               </a>
-              <span>•</span>
               <a href="#" className="hover:text-primary transition-colors">
                 Termos de Uso
               </a>
