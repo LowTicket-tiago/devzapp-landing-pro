@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PlayCircle } from "lucide-react";
-import whatsappFeaturesImage from "@/assets/whatsapp-features.jpg";
+// Removed old import
 export function CourseContentSection() {
   const lessons = ["Boas-Vindas", "Comunique com o seu cliente utilizando a ferramenta certa", "Qual versão do WhatsApp eu uso?", "Como evitar de levar golpes no seu WhatsApp", "Princípios do WhatsApp e aquecendo meu número", "Como você pode vender no WhatsApp?", "Como evitar bloqueio no WhatsApp (Parte 1)", "Como evitar bloqueio no WhatsApp (Parte 2)", "Novas profissões do WhatsApp", "Vale a pena automatizar o meu negócio?", "Automatizando uma conversa na prática", "Como organizar o meu WhatsApp?", "Interagindo com seus clientes de forma automática e personalizada"];
   return <section className="py-20 bg-background relative">
@@ -41,7 +41,7 @@ export function CourseContentSection() {
           <div className="space-y-8">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl" />
-              <img src={whatsappFeaturesImage} alt="WhatsApp Business Features" className="relative z-10 w-full rounded-3xl border border-primary/20" />
+              <img src="/lovable-uploads/a390bb79-819d-42a9-a960-0340e5b75da0.png" alt="Funil de Vendas do WhatsApp" className="relative z-10 w-full rounded-3xl border border-primary/20" />
             </div>
 
             
