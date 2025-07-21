@@ -4,6 +4,11 @@ import heroImage from "@/assets/hero-whatsapp.jpg";
 export function HeroSection() {
   return (
     <section className="min-h-screen bg-gradient-dark flex items-center justify-center relative overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: 'url(/lovable-uploads/195cdff5-401b-493a-bd38-416523505276.png)' }}
+      />
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-neon opacity-20" />
       <div className="absolute top-10 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
