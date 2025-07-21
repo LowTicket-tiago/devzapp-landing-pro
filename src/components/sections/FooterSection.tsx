@@ -47,6 +47,9 @@ export function FooterSection() {
             </div>
             
             <div className="flex justify-center items-center gap-6 text-sm text-gray-text">
+              <a href="https://www.instagram.com/tiagodevzapp/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                📸 Instagram
+              </a>
               <a href="#" className="hover:text-primary transition-colors">
                 📱 Política de Privacidade
               </a>
