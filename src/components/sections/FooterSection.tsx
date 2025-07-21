@@ -1,13 +1,10 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
 export function FooterSection() {
   const handlePurchase = () => {
     window.open('https://checkout4.xgrow.com/pt/89f5236f-9399-4d34-89b6-d5b6d561e4cf/NDk3MTM=', '_blank');
   };
-
-  return (
-    <footer className="py-20 bg-background border-t border-primary/20">
+  return <footer className="py-20 bg-background border-t border-primary/20">
       <div className="container mx-auto px-6">
         {/* Final CTA */}
         <div className="text-center mb-16">
@@ -31,12 +28,7 @@ export function FooterSection() {
                 <span>🔒 Garantia de 7 dias</span>
               </div>
             </div>
-            <Button 
-              variant="cta" 
-              size="xl" 
-              className="w-full font-bold"
-              onClick={handlePurchase}
-            >
+            <Button variant="cta" size="xl" className="w-full font-bold" onClick={handlePurchase}>
               👉 Quero garantir meu acesso agora
             </Button>
           </Card>
@@ -47,25 +39,13 @@ export function FooterSection() {
           <div className="text-center space-y-4">
             <p className="text-gray-text text-lg font-semibold">
               © 2025 Todos os direitos reservados | Desenvolvido por{" "}
-              <span className="text-primary">Devzapp</span>
+              <span className="text-primary"></span>
             </p>
             
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-text">
-              <a 
-                href="mailto:suporte@devzapp.com.br" 
-                className="hover:text-primary transition-colors"
-              >
-                📧 suporte@devzapp.com.br
-              </a>
+              
               <span>•</span>
-              <a 
-                href="https://www.devzapp.com.br" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-              >
-                🌐 www.devzapp.com.br
-              </a>
+              
             </div>
             
             <div className="flex justify-center items-center gap-6 text-sm text-gray-text">
@@ -79,13 +59,10 @@ export function FooterSection() {
             </div>
 
             <div className="mt-8 pt-4 border-t border-primary/10">
-              <p className="text-xs text-muted-foreground max-w-2xl mx-auto">
-                Este produto é comercializado com apoio da Hotmart. A plataforma não faz controle editorial prévio dos produtos comercializados, nem avalia a tecnicidade e experiência daqueles que os produzem. A existência de um produto e sua aquisição, através da plataforma, não podem ser consideradas como garantia de qualidade de conteúdo e resultado, em qualquer hipótese.
-              </p>
+              <p className="text-xs text-muted-foreground max-w-2xl mx-auto">Este produto é comercializado com . A plataforma não faz controle editorial prévio dos produtos comercializados, nem avalia a tecnicidade e experiência daqueles que os produzem. A existência de um produto e sua aquisição, através da plataforma, não podem ser consideradas como garantia de qualidade de conteúdo e resultado, em qualquer hipótese.</p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }

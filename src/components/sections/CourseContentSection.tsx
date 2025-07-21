@@ -2,26 +2,9 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PlayCircle } from "lucide-react";
 import whatsappFeaturesImage from "@/assets/whatsapp-features.jpg";
-
 export function CourseContentSection() {
-  const lessons = [
-    "Boas-Vindas",
-    "Comunique com o seu cliente utilizando a ferramenta certa",
-    "Qual versão do WhatsApp eu uso?",
-    "Como evitar de levar golpes no seu WhatsApp",
-    "Princípios do WhatsApp e aquecendo meu número",
-    "Como você pode vender no WhatsApp?",
-    "Como evitar bloqueio no WhatsApp (Parte 1)",
-    "Como evitar bloqueio no WhatsApp (Parte 2)",
-    "Novas profissões do WhatsApp",
-    "Vale a pena automatizar o meu negócio?",
-    "Automatizando uma conversa na prática",
-    "Como organizar o meu WhatsApp?",
-    "Interagindo com seus clientes de forma automática e personalizada"
-  ];
-
-  return (
-    <section className="py-20 bg-background relative">
+  const lessons = ["Boas-Vindas", "Comunique com o seu cliente utilizando a ferramenta certa", "Qual versão do WhatsApp eu uso?", "Como evitar de levar golpes no seu WhatsApp", "Princípios do WhatsApp e aquecendo meu número", "Como você pode vender no WhatsApp?", "Como evitar bloqueio no WhatsApp (Parte 1)", "Como evitar bloqueio no WhatsApp (Parte 2)", "Novas profissões do WhatsApp", "Vale a pena automatizar o meu negócio?", "Automatizando uma conversa na prática", "Como organizar o meu WhatsApp?", "Interagindo com seus clientes de forma automática e personalizada"];
+  return <section className="py-20 bg-background relative">
       <div className="absolute inset-0 bg-gradient-neon opacity-5" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -39,8 +22,7 @@ export function CourseContentSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Course Content */}
           <div className="space-y-4">
-            {lessons.map((lesson, index) => (
-              <Card key={index} className="p-6 bg-card border-primary/20 hover:border-primary/40 transition-all hover:shadow-glow group">
+            {lessons.map((lesson, index) => <Card key={index} className="p-6 bg-card border-primary/20 hover:border-primary/40 transition-all hover:shadow-glow group">
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-3">
                     <Badge variant="secondary" className="bg-primary text-primary-foreground">
@@ -52,47 +34,19 @@ export function CourseContentSection() {
                     {lesson}
                   </h3>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           {/* Features Highlight */}
           <div className="space-y-8">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl" />
-              <img 
-                src={whatsappFeaturesImage} 
-                alt="WhatsApp Business Features" 
-                className="relative z-10 w-full rounded-3xl border border-primary/20"
-              />
+              <img src={whatsappFeaturesImage} alt="WhatsApp Business Features" className="relative z-10 w-full rounded-3xl border border-primary/20" />
             </div>
 
-            <Card className="p-8 bg-card border-primary/20">
-              <h3 className="text-2xl font-bold text-foreground mb-6">
-                ✨ Bônus Inclusos:
-              </h3>
-              <div className="space-y-4 text-gray-text">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span>Acesso vitalício ao conteúdo</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span>Suporte direto por 30 dias</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span>Atualizações futuras inclusas</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span>Certificado de conclusão</span>
-                </div>
-              </div>
-            </Card>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
